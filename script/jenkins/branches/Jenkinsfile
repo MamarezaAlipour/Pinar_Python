@@ -1,0 +1,44 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('ci') {
+      parallel {
+
+        stage('lint') {
+          steps {
+            sh '''#!/bin/bash
+            export PATH=$PATH:$CONDAPATH
+            source activate pinar_env
+            rm -f pylint.log
+            pylint -ry pinar | tee pylint.log'''
+
+            discoverGitReferenceBuild referenceJob: 'pinar_branches/develop'
+            recordIssues tools: [pyLint(pattern: 'pylint.log')]
+          }
+        }
+
+        stage('unit_test') {
+          steps {
+            sh '''#!/bin/bash
+            export PATH=$PATH:$CONDAPATH
+            source activate pinar_env
+            rm -rf tests_xml/
+            rm -rf coverage/
+            python -m coverage run tests_runner.py unit
+            python -m coverage xml -o coverage.xml
+            python -m coverage html -d coverage'''
+          }
+        }
+
+      }
+    }
+  }
+
+  post {
+    always {
+      junit 'tests_xml/*.xml'
+      cobertura coberturaReportFile: 'coverage.xml'
+    }
+  }
+}
