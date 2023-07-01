@@ -1,4 +1,4 @@
-# PINAR
+# PINAR (Python 3.8+ Ver)
 
 PINAR means Fountain and is a probabilistic natural catastrophe impact model, that also calculates averted damage (benefit) thanks to adaptation measures of any kind (from grey to green infrastructure, behavioural, etc.).
 
