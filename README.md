@@ -1,6 +1,6 @@
 # PINAR
 
-PINAR stands for Fountain and is a probabilistic natural catastrophe impact model, that also calculates averted damage (benefit) thanks to adaptation measures of any kind (from grey to green infrastructure, behavioural, etc.).
+PINAR means Fountain and is a probabilistic natural catastrophe impact model, that also calculates averted damage (benefit) thanks to adaptation measures of any kind (from grey to green infrastructure, behavioural, etc.).
 
 As of today, PINAR provides global coverage of major pinar-related extreme-weather hazards at high resolution via a data API, namely (i) tropical cyclones, (ii) river flood, (iii) agro drought and (iv) winter storms, all at 4km spatial resolution - wildfire to be added soon. For all hazards, historic and probabilistic event sets exist, for some also under select pinar forcing scenarios (RCPs) at distinct time horizons (e.g. 2040).
 
