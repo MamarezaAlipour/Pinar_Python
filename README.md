@@ -18,9 +18,3 @@ This is the Python (3.8+) version of PINAR - please see https://github.com/david
 PINAR runs on Windows, macOS and Linux. It can be installed from sources or - in case of pinar_python - directly with pip. See the installation guide for instructions.
 
 Follow the [tutorial](doc\tutorial\1_main_pinar.ipynb) in a Jupyter Notebook to see what can be done with PINAR and how.
-
-## Documentation
-
-Documentation is available on Read the Docs:
-
-Note that all the documentations has two versions,'latest' and 'stable', and explicit version numbers, such as 'v3.1.1', in the url path. 'latest' is created from the 'develop' branch and has the latest changes by developers, 'stable' from the latest release.
