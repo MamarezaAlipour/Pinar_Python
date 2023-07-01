@@ -1,0 +1,7 @@
+include pinar/conf/pinar.conf
+graft pinar/*/*/test/data
+graft pinar/*/test/data
+graft pinar/test/data
+graft data
+global-exclude .*
+global-exclude *.py[co]
