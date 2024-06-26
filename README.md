@@ -11,7 +11,7 @@ PINAR is divided into two parts (two repositories):
 
 It is recommend for new users to begin with the core (1) and the [tutorials](https://github.com/MamarezaAlipour/Pinar_Python/tree/main/doc/tutorial) therein.
 
-This is the Python (3.8+) version of PINAR - please see https://github.com/davidnbresch/pinar for backward compatibility (MATLAB).
+This is the Python (3.8+) version of PINAR
 
 ## Getting started
 
